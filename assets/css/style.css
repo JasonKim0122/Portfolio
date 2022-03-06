@@ -5,12 +5,63 @@
 }
 
 :root {
-    --primary-color: rgb(6, 139, 156);
+    --primary-color: rgb(215, 253, 253);
     --secondary-color: #ffffff; 
-    --tertiary-color: rgb(215, 253, 253);  
+    --tertiary-color: rgb(6, 139, 156);  
 }
 
 body {
-    color: var(--primary-color); 
+    background-color: var(--primary-color); 
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*  Header CSS style start */
+
+header {
+    background-image: url(../images/background-sea-sky-1996307.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%; 
+    padding: 20px 40px;
+    background-color: var(--secondary-color);
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+header h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--primary-color);
+    margin: 0;
+    padding: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none; 
+    color: var(--primary-color); 
+}
+
+header nav {
+    margin: 20px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 0 20px;
+    font-weight: lighter;
+    font-size: 1.25vw;
+    text-shadow: 0 0 10 rgba(0, 0, 0, 0.5);
+}
+/* Header style end */
