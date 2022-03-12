@@ -34,7 +34,7 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 40px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin: 0;
     padding: 20px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -43,6 +43,7 @@ header h1 {
 header a {
     text-decoration: none; 
     color: var(--primary-color); 
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav {
@@ -59,8 +60,8 @@ header nav ul {
 
 header nav ul li a {
     padding: 0 20px;
-    font-weight: lighter;
-    font-size: 1.25vw;
+    font-weight: bold;
+    font-size: 22px;
     text-shadow: 0 0 10 rgba(0, 0, 0, 0.5);
 }
 /* Header style end */
@@ -189,28 +190,137 @@ header nav ul li a {
 
 /* Contact style start */
 
-.contact-title {
-    font-size: 40px;
-    color: var(--secondary-color);
-    border-bottom: 3px solid;
-    padding: 0 20px;
+.contact-image {
+    margin-left: 30%;
     text-align: center;
-    margin: 20px auto;
-    width: 50%;
+    width:30%;
+    height:30%;
 }
-.contact {
-    background-image: url(../images/contact.png);
-    background-attachment: static;
-    background-size: 100%;
-    background-position: 100%;
-    margin: 80px;
-    padding: 80px;
-}
-
 .contact h3 {
     color: var(--secondary-color);
 }
 
 .contact-info {
     display: block;
+    font-weight: bold;
+    font-size: 18px;
 }
+/*  Contact style end */
+
+/* Media query for smaller desktop screens and smaller */
+
+@media screen and (max-width: 980px){
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav a {
+        font-size: 20px;
+        border-radius: 10px;
+        text-shadow: none;
+    }
+    .hero {
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+        width: 100%;
+    }
+    .contents {
+        flex: 0 90%;
+    }
+    
+    .contents p {
+    margin-bottom: 40px;
+    }
+    .contents h3 {
+    margin-top: 40px;
+    }
+}    
+    
+
+
+@media screen and (max-width: 768px){
+    header nav ul li a {
+        justify-content: center;
+        font-size:3.5vw;
+    }
+
+    section {
+        padding: 30px;
+        padding-left: 30px;
+        padding-right: 45px;
+        text-align: center;
+    }
+    .work-title {
+        padding-right:20 40px;
+    }
+    .contents img {
+        flex: 0 20%;
+        margin: 0;
+        margin-right: 20px;
+        width: 100%;
+        height:45%;
+    }
+    .contact {
+        text-align: center;
+    }
+    .contact-image {
+        margin-right: 120px;
+        margin-left: 90px;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header nav ul {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .section-title, .work-title {
+        width: 90%; 
+    }
+
+    .intro {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .me {
+        width:100%;
+    }
+    .section-title {
+        border-bottom: 3px solid var(--secondary-color);
+        border-right: none;
+        margin: 20px 40px 20px 15px;
+        padding: 10px 20px;   
+        text-align: center;   
+    }
+    .section-title p {
+        width: 100%;
+    }
+    .contact-image {
+        width: 80%;
+        padding:0 ;
+        margin:0;
+    }
+    .contents h3 {
+        padding-top: 30px;
+    }
+    .contents p {
+        padding-bottom: 80px;
+    }
+
+} 
