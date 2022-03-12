@@ -27,7 +27,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     position: -webkit-sticky; 
-    position: sticky;
+    position: static;
     top: 0;
     z-index: 9999;
 }
@@ -58,8 +58,8 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li a {
-    padding: 0 20px;
+header nav ul li a{
+    padding: 0 40px;
     font-weight: bold;
     font-size: 22px;
     text-shadow: 0 0 10 rgba(0, 0, 0, 0.5);
@@ -79,7 +79,7 @@ header nav ul li a {
     padding: 22%;
 }
 
-.hero div {
+.hero-info {
     font-size: 20px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding-bottom: 20px;
@@ -189,9 +189,8 @@ header nav ul li a {
 /* Work Section style end */
 
 /* Contact style start */
-
 .contact-image {
-    margin-left: 30%;
+    margin-left: 33%;
     text-align: center;
     width:30%;
     height:30%;
@@ -201,9 +200,16 @@ header nav ul li a {
 }
 
 .contact-info {
-    display: block;
+    text-align: center;
     font-weight: bold;
     font-size: 18px;
+}
+.contact-picture {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 30px;
+    padding-bottom: 40px;
 }
 /*  Contact style end */
 
@@ -315,6 +321,10 @@ header nav ul li a {
         width: 80%;
         padding:0 ;
         margin:0;
+    }
+    .contact-picture {
+        margin-left: 50px;
+        padding-bottom: 20px;
     }
     .contents h3 {
         padding-top: 30px;
