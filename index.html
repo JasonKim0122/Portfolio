@@ -13,20 +13,6 @@
         <!-- Header -->
         <header>
             <h1> Jason Kim</h1>
-            <!-- Navigation -->
-            <!-- <nav>
-                <ul>
-                    <li>
-                        <a href="#About-me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#Work">Work</a>
-                    </li>
-                    <li>
-                        <a href="#Contact-me">Contact Me</a>
-                    </li>
-                </ul>
-            </nav> -->
         </header>
 
         <!-- Hero Section -->
@@ -41,7 +27,7 @@
                 </div>
                 <div class="socials">
                     <figure class="image is-256x256">
-                        <img class="is-rounded" src="./assets/images/port-image.jpg" alt="picture of Jason Kim">
+                        <a id="aboutMeId"><img class="is-rounded" src="./assets/images/port-image.jpg" alt="picture of Jason Kim"></a>
                     </figure>
                 </div>
                 <div class="nav">
@@ -57,64 +43,25 @@
                 </div>
             </div>
         </section>
-
-        <!-- About me section
-        <section id="About-me" class="intro">
-            <div class="me">
-                <h2 class="section-title"> About Me</h2>
-            </div>
-            <div class="me-text">
-                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid deserunt distinctio incidunt ullam sequi eligendi delectus, reiciendis doloribus expedita voluptatem, labore dolorum repudiandae odit, ex molestiae aliquam cum veniam quod.
-                </p>    
-            </div>
-        </section>
-
-         Work section 
-        <section id="Work" class="work-content">
-            <h2 class="work-title">Work</h2>
-            <div class="work-contents">
-                <div class="contents">
-                    <h3>Run Buddy</h3>
-                    <a href="https://jasonkim0122.github.io/run-buddy/"><img src="./assets/images/Run-buddy.PNG" alt="run buddy website" > </a>
-                    <h4>Created a mock up for Run Buddy</h4>
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda saepe asperiores et inventore nisi vero nihil cum? Veritatis laudantium deserunt, quas, officia neque voluptates unde asperiores quia distinctio beatae perferendis!</p>
+        <!-- Modal Section Start -->
+        <div class="modal aboutModal">
+            <div class="modal-background aboutMeBg"></div>
+            <div class="modal-card">
+                <div class="modal-card-head">
+                    <p class="modal-card-title">About Me</p>
+                    <button id="deleteBtn" class="delete" aria-label="close"></button>
                 </div>
-                <div class="contents">
-                    <h3>Horiseon</h3>
-                    <a href="https://jasonkim0122.github.io/Horiseon-search-engine/"><img src="./assets/images/Horiseon.PNG" alt="Horiseon snippet"> </a>
-                    <h4>Refactor code for Horiseon</h4>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni deleniti repellat, cumque enim consectetur assumenda recusandae ullam obcaecati molestiae tenetur iure, quibusdam libero odio, incidunt alias accusamus debitis voluptatum dignissimos.</p>
-                </div>
-                <div class="contents">
-                    <h3>Skills</h3>
-                    <img src="./assets/images/skills.jpg" alt="Set of skills" > 
-                    <h4>Skills I have obtained</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita beatae id doloremque deleniti consequatur eum minima autem officia distinctio consequuntur, esse modi quam voluptate at, aperiam soluta quaerat placeat ad.</p>
-                </div>
-            </div>    
-        </section>
-
-         Contact me section 
-        <section id="Contact-me" class="contact">
-            <img src="./assets/images/contact.png"  alt="contact me icons email, phone, social media" class="contact-image">
-            <div class="contact-picture">
-                <img src="assets/images/port-image.jpg" alt="Picture of Jason Kim" />
+                <section class="modal-card-body">
+                    <!-- About me info here -->
+                </section>
+                <footer class="modal-card-foot"> 
+                    <button class="button" id="exitBtn">Exit</button>
+                </footer>
             </div>
-            <div class="contact-info">
-                <h3>My Info</h3>
-                <p>If you have any questions I would be more than happy to answer them!
-                    <br/>
-                    Feel free to Email or call me!
-                </p>
-                <address>
-                    7204 Meadow Glen Dr <br/>
-                    Parker, Tx <br/>
-                    75002 <br/>
-                    P: 469.767.1042
-                    E: <a href="mailto:JasonKim0122@gmail.com">JasonKim0122@gmail.com</a>
-                </address>
-            </div> -->
-        </section>
+        </div>
+        <!-- Modal Section end -->
+
+    <script src="./assets/js/index.js"></script>
     </body>
 
 </html>
